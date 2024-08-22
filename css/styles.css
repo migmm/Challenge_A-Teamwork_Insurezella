@@ -2,7 +2,10 @@
 /************ GLOBAL STYLES ***********/
 /**************************************/
 
-/* Global variables*/
+/* Global variables and configuration */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --black: #000;
     --white:#FFF;
@@ -18,18 +21,68 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: none;
+    box-sizing: border-box;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Be Vietnam Pro", sans-serif;
 }
 
 /**************************************/
 /*********** HEADER STYLES ************/
 /**************************************/
 
+/* Mobile view */
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: var(--purple);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 104px;
+}
+
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container {
+    position: absolute;
+    top: 11px;
+    left: 35px;
+}
+
+#logo-container img {
+    height: 152px;
+}
+
+#navbar-menu ul {
+    display: none;
+}
+
+#navbar-menu::before {
+    content: '☰';
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#headline {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    text-align: center;
+    order: 2;
+}
+
+#call-us-button-container {
+    display: none;
+}
 
 /**************************************/
 /************* MAIN STYLES ************/
 /**************************************/
-
 
 /**************************************/
 /*********** FOOTER STYLES ************/
