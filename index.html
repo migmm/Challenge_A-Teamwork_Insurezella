@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Insurezella</title>
 </head>
@@ -11,15 +12,33 @@
 <body>
     <header>
         <div id="header-container">
+
             <div id="headline">
-                <p>Want to Connect with us?</p>
-                <p>Mail us: support@insurezella.com</p>
-                <p>Call us: (877) 227 0774</p>
+                <p>
+                    Want to Connect with us?
+                </p>
+                <p>
+                    <i class="fas fa-envelope header-icon"></i>
+                    Mail us: support@insurezella.com
+                </p>
+                <p>
+                    <i class="fas fa-phone-alt header-icon"></i>
+                    Call us: (877) 227 0774
+                </p>
             </div>
+
             <div id="navbar-container">
                 <div id="logo-container">
                     <img src="img/logo.png" alt="Company logo">
                 </div>
+
+                <input type="checkbox" id="menuToggle">
+                <label class="hamburguer-icon" for="menuToggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+
                 <nav id="navbar-menu">
                     <ul>
                         <li>
@@ -36,10 +55,12 @@
                         </li>
                     </ul>
                 </nav>
+
                 <div id="call-us-button-container">
                     <button>Call Us Now</button>
                 </div>
             </div>
+
         </div>
     </header>
 
