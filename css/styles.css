@@ -2,36 +2,43 @@
 /************ GLOBAL STYLES ***********/
 /**************************************/
 
-/* Global variables and configuration */
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+/** Global styles and configuration **/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --black: #000;
     --white: #fff;
     --purple: #6475ed;
-    --blue: #005cff;
+    --blue: #345cfb;
     --skyblue: #2e77f9;
     --lightblue: #ecf5ff;
     --cyan: #00b1ff;
     --lightgray: #d9d9d8;
+    --lightbrown: #7b7a7b;
     --logoshadow: rgba(0, 0, 0, 0.38);
 }
 
-/* Reset styles */
+::selection {
+    background-color: var(--cyan);
+    color: var(--white);
+}
+
+/************ Reset styles ************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* font-family: "Montserrat", sans-serif; */
     font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
 }
 
 /**************************************/
 /*********** HEADER STYLES ************/
 /**************************************/
 
-/* Mobile view */
+/************* Mobile view ************/
 #header-container {
     display: flex;
     flex-direction: row;
@@ -50,6 +57,7 @@
     position: absolute;
     top: 11px;
     left: 35px;
+    z-index: 1000;
 }
 
 #logo-container img {
@@ -79,19 +87,21 @@
 }
 
 #headline p:nth-child(1) {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--white);
 }
+
 #headline p:nth-child(2) {
     margin-left: 66px;
-    font-size: .7em;
+    font-size: 0.7rem;
     font-weight: 500;
     color: var(--white);
 }
+
 #headline p:nth-child(3) {
     margin-left: 27px;
-    font-size: .7em;
+    font-size: 0.7rem;
     font-weight: 500;
     color: var(--white);
 }
@@ -100,17 +110,17 @@
 #headline p:nth-child(2) {
     vertical-align: middle;
     display: inline-block;
-} 
+}
 
 .header-icon {
-margin-right: 7px;
+    margin-right: 7px;
 }
 
 #call-us-button-container {
     display: none;
 }
 
-/* Hamburguer button */
+/********** Hamburguer button *********/
 #menuToggle {
     display: none;
 }
@@ -153,6 +163,94 @@ margin-right: 7px;
 /************* MAIN STYLES ************/
 /**************************************/
 
+/**************** Hero ****************/
+.hero {
+    display: flex;
+    height: 562px;
+    position: relative;
+}
+
+#hero-divisor {
+    flex: 0 0 42.5%;
+    background-image: url('/img/gray-bg.png');
+    background-repeat: repeat-x;
+    background-position: left top;
+    background-size: 100% 100%;
+}
+
+#hero-image {
+    flex: 0 0 57.5%;
+    background: url('/img/hero-bg.jpg') no-repeat left center;
+    background-size: cover;
+}
+
+#hero-content {
+    position: absolute;
+    top: 292px;
+    left: 70px;
+    transform: translate(0%, -50%);
+    text-align: left;
+    width: 517px;
+    height: 561px;
+    padding-top: 114px;
+}
+
+#hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.9rem;
+    font-weight: 800;
+    color: var(--blue);
+    line-height: 3.1rem;
+    margin-bottom: 46px;
+}
+
+#hero-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.89rem;
+    color: var(--lightbrown);
+    margin-bottom: 67px;
+}
+
+#hero-content button {
+    border: none;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--cyan);
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/*************** Slider ***************/
+
+
 /**************************************/
 /*********** FOOTER STYLES ************/
 /**************************************/
+
+/**************************************/
+/*********** MEDIA QUERIES ************/
+/**************************************/
+
+/********** Breakpoint to hide ********/
+/** Want to Connect with us? message **/
+/** when screen width is below 1036px */
+@media (max-width: 1036px) {
+    #headline p:nth-child(1) {
+        display: none;
+    }
+}
+
+/**************************************/
+/** MEDIA QUERIES FOR HOVER DEVICES ***/
+/**************************************/
+
+@media (hover: hover) {
+    #hero-content button:hover {
+        background-color: #345cfb;
+    }
+}
