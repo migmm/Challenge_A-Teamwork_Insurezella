@@ -2,6 +2,18 @@
 /************ GLOBAL STYLES ***********/
 /**************************************/
 
+/* Global variables*/
+:root {
+    --black: #000;
+    --white:#FFF;
+    --purple: #5C76F1;
+    --blue: #005CFF;
+    --skyblue: #2E77F9;
+    --lightblue: #ECF5FF;
+    --cyan: #00B1FF;
+    --lightgray: #D9D9D8;
+}
+
 /* Reset styles */
 * {
     margin: 0;
