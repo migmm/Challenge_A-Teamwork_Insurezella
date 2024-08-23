@@ -17,6 +17,7 @@
     --lightgray: #d9d9d8;
     --lightbrown: #7b7a7b;
     --logoshadow: rgba(0, 0, 0, 0.38);
+    --cardshadow: rgba(0,52,255,0.49);
 }
 
 ::selection {
@@ -226,7 +227,50 @@
 }
 
 /*************** Slider ***************/
+.slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 460px;
+    align-items: center;
+    justify-content: center;
+    gap:52px;
+    padding-top: 65px;
+}
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 302px;
+    height: 306px;
+    border-radius: 8px;
+    box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    -webkit-box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    -moz-box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 56px;
+}
+
+.image-container {
+    width: 90px;
+    height: 81px;
+    margin-bottom: 27px;
+}
+
+.image-container img {
+    width: auto;
+    height: 100%;
+}
+
+.title-container h2{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.75rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
 
 /**************************************/
 /*********** FOOTER STYLES ************/
