@@ -18,8 +18,10 @@
     --lightblue: #ecf5ff;
     --darkblue: #2b3143;
     --cyan: #00b1ff;
+    --darkcyan: #2083FD;
     --lightgray: #d9d9d8;
     --midgray: #999ea8;
+    --grayfromblue: #979ba8;
     --lightbrown: #7b7a7b;
     --logoshadow: rgba(0, 0, 0, 0.38);
     --cardshadow: rgba(0, 52, 255, 0.49);
@@ -276,7 +278,7 @@
     letter-spacing: -1px;
 }
 
-/******* Plan descriptio section ******/
+/******* Plan description section ******/
 .simple-plan-container {
     margin-top: 50px;
     margin-left: 100px;
@@ -287,7 +289,7 @@
     height: auto;
 }
 
-.simple-plan-container .plan-image-container img{
+.simple-plan-container .plan-image-container img {
     width: 100%;
     height: auto;
 }
@@ -299,7 +301,7 @@
     margin-left: 280px;
 }
 
-.simple-plan-container .plan-description-container h2{
+.simple-plan-container .plan-description-container h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.8rem;
     font-weight: 750;
@@ -307,7 +309,7 @@
 }
 
 .simple-plan-container .plan-description-container p {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.9rem;
@@ -316,8 +318,8 @@
     max-width: 570px;
 }
 
-.simple-plan-container .plan-description-container button{
-    border: 1px solid #4583FF;
+.simple-plan-container .plan-description-container button {
+    border: 1px solid #4583ff;
     border-radius: 25px;
     width: 283px;
     height: 45px;
@@ -344,12 +346,72 @@
     width: 240px;
 }
 
-.simple-plan-container .plan-advantages .props-container span{
-    font-family: "Inter", sans-serif;
+.simple-plan-container .plan-advantages .props-container span {
+    font-family: 'Inter', sans-serif;
     font-size: 1.25em;
     font-weight: 750;
     line-height: 1.8rem;
 }
+
+/******* Pick insurance section ******/
+
+#picking-icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lightblue);
+    margin-top: 98px;
+    padding-bottom: 36px;
+}
+
+#picking-icons-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: var(--darkblue);
+    margin-top: 80px;
+}
+
+#picking-icons-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 74px;
+}
+
+#picking-icons-cards-container .picking-icons-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 322px;
+    margin-left: 43px;
+    margin-right: 43px;
+}
+
+.picking-icons-card .picking-icons-card-image-container {
+    margin-top:28px;
+}
+
+.picking-icons-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--darkcyan);
+    font-size: 1.6rem;
+    font-weight: 740;
+    margin-top: 41px;
+}
+
+.picking-icons-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.78rem;
+    color: var(--grayfromblue);
+    text-align: center;
+    margin-top: 20px;
+}
+
 /**************************************/
 /*********** FOOTER STYLES ************/
 /**************************************/
