@@ -1,0 +1,79 @@
+/**************************************/
+/*********** FOOTER STYLES ************/
+/**************************************/
+
+/************ Right panel **************/
+#footer-right-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 136px;
+    right: 0;
+    width: 983px;
+    height: 405px;
+    background-color: var(--white);
+    box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    -webkit-box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    -moz-box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    padding-top: 26px;
+}
+
+#footer-right-container #company {
+    width: 393px;
+    margin-left: 139px;
+}
+
+#footer-right-container #company h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--acquamarineblue);
+}
+
+#footer-right-container #company .company-links {
+    margin-top: 25px;
+}
+
+#footer-right-container #company .company-links div {
+    margin-top: 13px;
+}
+
+#footer-right-container #company .company-links div a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: var(--lightbrown);
+    text-decoration: none;
+}
+
+#footer-right-container #get-in-touch {
+    width: 380px;
+}
+
+#footer-right-container #get-in-touch h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--acquamarineblue);
+}
+
+#footer-right-container #get-in-touch .link-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer-right-container #get-in-touch .link-container div {
+    display: flex;
+    align-items: center;
+
+}
+
+#footer-right-container #get-in-touch .link-container div img{
+    margin-right: 15px;
+}
+
+#footer-right-container #get-in-touch div a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: var(--lightbrown);
+    text-decoration: none;
+}
