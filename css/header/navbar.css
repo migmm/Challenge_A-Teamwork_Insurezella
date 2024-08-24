@@ -1,0 +1,87 @@
+/**************************************/
+/*********** HEADER STYLES ************/
+/**************************************/
+
+/************* Mobile view ************/
+/**************** Navbar **************/
+#header-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--purple);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 104px;
+}
+
+#navbar-container {
+    width: 268px;
+}
+
+#logo-container {
+    position: absolute;
+    top: 11px;
+    left: 35px;
+    z-index: 1000;
+}
+
+#logo-container img {
+    height: 152px;
+    -webkit-box-shadow: 1px 0px 0px 0px var(--logoshadow);
+    -moz-box-shadow: 1px 0px 0px 0px var(--logoshadow);
+    box-shadow: 1px 0px 0px 0px var(--logoshadow);
+}
+
+#navbar-menu ul {
+    display: none;
+}
+
+#headline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: 2;
+    padding-right: 39px;
+}
+
+#headline p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#headline p:nth-child(1) {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+#headline p:nth-child(2) {
+    margin-left: 66px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+#headline p:nth-child(3) {
+    margin-left: 27px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+#headline p:nth-child(3),
+#headline p:nth-child(2) {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.header-icon {
+    margin-right: 7px;
+}
+
+#call-us-button-container {
+    display: none;
+}
+

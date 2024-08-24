@@ -4,131 +4,13 @@
 /************ GLOBAL STYLES ***********/
 @import url('global.css');
 
+/*************** HEADER ***************/
 
-/**************************************/
-/*********** HEADER STYLES ************/
-/**************************************/
+/**************** NAVBAR **************/
+@import url('header/navbar.css');
 
-/************* Mobile view ************/
-#header-container {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--purple);
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    height: 104px;
-}
-
-#navbar-container {
-    width: 268px;
-}
-
-#logo-container {
-    position: absolute;
-    top: 11px;
-    left: 35px;
-    z-index: 1000;
-}
-
-#logo-container img {
-    height: 152px;
-    -webkit-box-shadow: 1px 0px 0px 0px var(--logoshadow);
-    -moz-box-shadow: 1px 0px 0px 0px var(--logoshadow);
-    box-shadow: 1px 0px 0px 0px var(--logoshadow);
-}
-
-#navbar-menu ul {
-    display: none;
-}
-
-#headline {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    order: 2;
-    padding-right: 39px;
-}
-
-#headline p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-}
-
-#headline p:nth-child(1) {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--white);
-}
-
-#headline p:nth-child(2) {
-    margin-left: 66px;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: var(--white);
-}
-
-#headline p:nth-child(3) {
-    margin-left: 27px;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: var(--white);
-}
-
-#headline p:nth-child(3),
-#headline p:nth-child(2) {
-    vertical-align: middle;
-    display: inline-block;
-}
-
-.header-icon {
-    margin-right: 7px;
-}
-
-#call-us-button-container {
-    display: none;
-}
-
-/********** Hamburguer button *********/
-#menuToggle {
-    display: none;
-}
-
-.hamburguer-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 225px;
-    width: 43px;
-    height: 32px;
-    cursor: pointer;
-}
-
-.hamburguer-icon div {
-    width: 100%;
-    height: 6px;
-    background-color: var(--white);
-    transition: all 0.3s ease;
-    border-radius: 4px;
-}
-
-#menuToggle:checked + .hamburguer-icon div:nth-child(1) {
-    transform: rotate(45deg);
-    position: relative;
-    top: 14px;
-}
-
-#menuToggle:checked + .hamburguer-icon div:nth-child(2) {
-    opacity: 0;
-}
-
-#menuToggle:checked + .hamburguer-icon div:nth-child(3) {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -14px;
-}
+/********** HAMBURGUER BUTTON *********/
+@import url('header/hamburguer-button.css');
 
 /**************************************/
 /************* MAIN STYLES ************/
