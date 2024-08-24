@@ -1,0 +1,55 @@
+/***** Protecting people section ******/
+.protecting-container {
+    margin-top: 55px;
+    margin-left: 102px;
+}
+
+.protecting-container .protecting-image-container {
+    width: 593px;
+    height: auto;
+}
+
+.protecting-container .protecting-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.protecting-container .protecting-description-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 57px;
+    margin-left: 274px;
+    width: 570px;
+}
+
+.protecting-container .protecting-description-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.64rem;
+    font-weight: 750;
+    color: var(--darkblue);
+}
+
+.protecting-container .protecting-description-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    color: var(--midgray);
+    margin-top: 52px;
+    max-width: 570px;
+}
+
+.protecting-container .protecting-description-container button {
+    border: 1px solid #4583ff;
+    border-radius: 25px;
+    width: 283px;
+    height: 45px;
+    background-color: var(--seablue);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 40px;
+    display: block;
+}
+

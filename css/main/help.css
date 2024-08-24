@@ -1,0 +1,68 @@
+/************ Help section ************/
+#help-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 76px;
+}
+
+#help-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: var(--darkblue);
+}
+
+#help-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 62px;
+}
+
+.help-card {
+    width: 454px;
+    margin-left: 24px;
+    margin-right: 23px;
+}
+
+.help-card .help-image-container {
+    width: 454px;
+    height: 212px;
+    overflow: hidden;
+}
+
+.help-card .help-image-container img {
+    width: 102%;
+    transform: translateY(-12%);
+}
+
+.help-card .help-info-container {
+    margin-left: 34px;
+}
+
+.help-card .help-info-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.65rem;
+    font-weight: 650;
+    color: var(--darkblue);
+    margin-top: 48px;
+}
+
+.help-card .help-info-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.95rem;
+    width: 425px;
+    height: 124px;
+    color: var(--grayfromblue);
+    margin-top: 32px;
+}
+
+.help-card .help-info-container span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    color: var(--blue);
+    display: block;
+    margin-top: 30px;
+}

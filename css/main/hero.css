@@ -1,0 +1,64 @@
+/**************************************/
+/************* MAIN STYLES ************/
+/**************************************/
+
+/**************** Hero ****************/
+.hero {
+    display: flex;
+    height: 562px;
+    position: relative;
+}
+
+#hero-divisor {
+    flex: 0 0 42.5%;
+    background-image: url('/img/gray-bg.png');
+    background-repeat: repeat-x;
+    background-position: left top;
+    background-size: 100% 100%;
+}
+
+#hero-image {
+    flex: 0 0 57.5%;
+    background: url('/img/hero-bg.jpg') no-repeat left center;
+    background-size: cover;
+}
+
+#hero-content {
+    position: absolute;
+    top: 292px;
+    left: 70px;
+    transform: translate(0%, -50%);
+    text-align: left;
+    width: 517px;
+    height: 561px;
+    padding-top: 114px;
+}
+
+#hero-content h1 {
+    font-size: 2.9rem;
+    font-weight: 800;
+    color: var(--blue);
+    line-height: 3.1rem;
+    margin-bottom: 46px;
+}
+
+#hero-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.89rem;
+    color: var(--lightbrown);
+    margin-bottom: 67px;
+}
+
+#hero-content button {
+    border: none;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--cyan);
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 900;
+    cursor: pointer;
+}

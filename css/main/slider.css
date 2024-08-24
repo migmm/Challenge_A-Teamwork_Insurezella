@@ -1,0 +1,49 @@
+/**************************************/
+/************* MAIN STYLES ************/
+/**************************************/
+
+/*************** Slider ***************/
+.slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 460px;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+    padding-top: 65px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 302px;
+    height: 306px;
+    border-radius: 8px;
+    box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    -webkit-box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    -moz-box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 56px;
+}
+
+.card .image-container {
+    width: 90px;
+    height: 81px;
+    margin-bottom: 27px;
+}
+
+.card .image-container img {
+    width: auto;
+    height: 100%;
+}
+
+.card .title-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.75rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}

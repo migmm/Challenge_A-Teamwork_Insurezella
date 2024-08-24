@@ -1,0 +1,75 @@
+/******* Plan description section ******/
+.simple-plan-container {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.simple-plan-container .plan-image-container {
+    width: 595px;
+    height: auto;
+}
+
+.simple-plan-container .plan-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.simple-plan-container .plan-description-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 57px;
+    margin-left: 280px;
+}
+
+.simple-plan-container .plan-description-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 750;
+    color: var(--darkblue);
+}
+
+.simple-plan-container .plan-description-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    color: var(--midgray);
+    margin-top: 52px;
+    max-width: 570px;
+}
+
+.simple-plan-container .plan-description-container button {
+    border: 1px solid #4583ff;
+    border-radius: 25px;
+    width: 283px;
+    height: 45px;
+    background-color: var(--seablue);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 70px;
+    display: block;
+}
+
+.simple-plan-container .plan-advantages {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 57px;
+}
+
+.simple-plan-container .plan-advantages .props-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 240px;
+}
+
+.simple-plan-container .plan-advantages .props-container span {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25em;
+    font-weight: 750;
+    line-height: 1.8rem;
+}
