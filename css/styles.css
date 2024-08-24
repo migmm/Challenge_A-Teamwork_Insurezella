@@ -9,24 +9,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --black:           #000;
-    --white:           #fff;
-    --purple:          #6475ed;
-    --darkblue:        #2b3143;
-    --acquamarineblue: #172C82;
-    --seablue:         #0256ff;
-    --blue:            #345cfb;
-    --skyblue:         #2e77f9;
-    --darkcyan:        #2083fd;
-    --cyan:            #00b1ff;
-    --navyblue:        #73A6C9;
-    --lightblue:       #ecf5ff;
-    --lightbrown:      #7b7a7b;
-    --grayfromblue:    #979ba8;
-    --midgray:         #999ea8;
-    --lightgray:       #d9d9d8;
-    --logoshadow:      rgba(0, 0, 0, 0.38);
-    --cardshadow:      rgba(0, 52, 255, 0.49);
+    --black: #000;
+    --white: #fff;
+    --purple: #6475ed;
+    --darkblue: #2b3143;
+    --acquamarineblue: #01016b;
+    --seablue: #0256ff;
+    --blue: #345cfb;
+    --oceanblue: #5c76f1;
+    --skyblue: #2e77f9;
+    --darkcyan: #2083fd;
+    --cyan: #00b1ff;
+    --navyblue: #73a6c9;
+    --lightblue: #ecf5ff;
+    --lightbrown: #7b7a7b;
+    --grayfromblue: #979ba8;
+    --midgray: #999ea8;
+    --lightgray: #d9d9d8;
+    --logoshadow: rgba(0, 0, 0, 0.38);
+    --cardshadow: rgba(0, 52, 255, 0.49);
 }
 
 ::selection {
@@ -543,26 +544,35 @@
 /*********** FOOTER STYLES ************/
 /**************************************/
 
-/************ Left column *************/
-
 #footer-container {
+    width: 100%;
+    position: relative;
+    overflow: visible;
+    height: 230px;
+    background-color: var(--oceanblue);
+    margin-top: 400px;
+    margin-bottom: 357px;
 }
 
+/************ Left column *************/
 #footer-left-container {
     display: flex;
     flex-direction: row;
-    max-width: 984px;
+    position: absolute;
+    top: -351px;
+    width: 984px;
     height: 405px;
+    background-color: var(--white);
     box-shadow: 0px 9px 24px -4px var(--cardshadow);
     -webkit-box-shadow: 0px 9px 24px -4px var(--cardshadow);
     -moz-box-shadow: 0px 9px 24px -4px var(--cardshadow);
 }
 
 #footer-left-container #general-info {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width:49%;
+    width: 49%;
     margin-top: 31px;
 }
 
@@ -571,14 +581,14 @@
     height: 115px;
 }
 
-#footer-left-container #general-info #info-logo-container img{
+#footer-left-container #general-info #info-logo-container img {
     width: 100%;
     height: 100%;
     border-radius: 15px;
     border: 1px solid var(--navyblue);
 }
 
-#footer-left-container #general-info p{
+#footer-left-container #general-info p {
     width: 320px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
@@ -597,7 +607,7 @@
     padding-left: 83px;
 }
 
-#footer-left-container #general-info #info-socials .social-icon{
+#footer-left-container #general-info #info-socials .social-icon {
     color: var(--acquamarineblue);
     font-size: 35px;
 }
@@ -615,21 +625,98 @@
     margin-bottom: 25px;
 }
 
-#services #services-links div{
+#services #services-links div {
     margin-bottom: 14px;
 }
 
-#services #services-links div img{
+#services #services-links div img {
     transform: scale(1.4);
     margin-right: 8px;
 }
 
-#services #services-links div a{
+#services #services-links div a {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     color: var(--lightbrown);
     text-decoration: none;
 }
+
+/************ Right column *************/
+
+#footer-right-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 136px;
+    right: 0;
+    width: 983px;
+    height: 405px;
+    background-color: var(--white);
+    box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    -webkit-box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    -moz-box-shadow: 0px 9px 24px -4px var(--cardshadow);
+    padding-top: 26px;
+}
+#footer-right-container #company {
+    width: 393px;
+    margin-left: 139px;
+}
+
+#footer-right-container #company h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--acquamarineblue);
+}
+
+#footer-right-container #company .company-links {
+    margin-top: 25px;
+}
+
+#footer-right-container #company .company-links div {
+    margin-top: 13px;
+}
+
+#footer-right-container #company .company-links div a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: var(--lightbrown);
+    text-decoration: none;
+}
+
+#footer-right-container #get-in-touch {
+    width: 380px;
+}
+
+#footer-right-container #get-in-touch h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--acquamarineblue);
+}
+
+#footer-right-container #get-in-touch .link-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer-right-container #get-in-touch .link-container div {
+    display: flex;
+    align-items: center;
+
+}
+
+#footer-right-container #get-in-touch .link-container div img{
+    margin-right: 15px;
+}
+
+#footer-right-container #get-in-touch div a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: var(--lightbrown);
+    text-decoration: none;
+}
+
 /**************************************/
 /*********** MEDIA QUERIES ************/
 /**************************************/
