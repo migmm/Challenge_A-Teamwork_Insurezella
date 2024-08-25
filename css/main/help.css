@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 76px;
+    height: 697px;
 }
 
 #help-container h2 {
@@ -58,9 +59,9 @@
 .help-card .help-info-container p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.15rem;
-    line-height: 1.95rem;
+    line-height: 1.96rem;
     width: 425px;
-    height: 124px;
+    height: 129px;
     color: var(--grayfromblue);
     margin-top: 32px;
 }
@@ -71,4 +72,19 @@
     color: var(--blue);
     display: block;
     margin-top: 30px;
+}
+
+.help-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 62px;
+}
+
+.help-dots span {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var(--oceanblue);
 }

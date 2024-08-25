@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 460px;
+    height: 454px;
     align-items: center;
     justify-content: center;
     gap: 52px;
@@ -48,4 +48,20 @@
     line-height: 2.75rem;
     font-weight: 600;
     letter-spacing: -1px;
+}
+
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-top: px;
+}
+
+.dots span {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var(--oceanblue);
 }
