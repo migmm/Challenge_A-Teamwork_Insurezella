@@ -66,10 +66,9 @@
 #footer-right-container #get-in-touch .link-container div {
     display: flex;
     align-items: center;
-
 }
 
-#footer-right-container #get-in-touch .link-container div img{
+#footer-right-container #get-in-touch .link-container div img {
     margin-right: 15px;
 }
 
@@ -78,4 +77,78 @@
     font-size: 1.6rem;
     color: var(--lightbrown);
     text-decoration: none;
+}
+
+/*************** Web view *************/
+@media screen and (min-width: 1081px) {
+    #footer-right-container {
+        top: -262px;
+        right: 113px;
+        width: 703px;
+        height: 296px;
+        padding-top: 20px;
+        box-shadow: 10px -1px 16px -9px var(--cardshadow);
+        -webkit-box-shadow: 10px -1px 16px -9px var(--cardshadow);
+        -moz-box-shadow: 10px -1px 16px -9px var(--cardshadow);
+    }
+
+    #footer-right-container #company {
+        width: 293px;
+        margin-left: 82px;
+    }
+
+    #footer-right-container #company h4 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--acquamarineblue);
+    }
+
+    #footer-right-container #company .company-links {
+        margin-top: 21px;
+    }
+
+    #footer-right-container #company .company-links div {
+        margin-top: 13px;
+    }
+
+    #footer-right-container #company .company-links div a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.11rem;
+        color: var(--lightbrown);
+        text-decoration: none;
+        line-height: 1.55rem;
+    }
+
+    #footer-right-container #get-in-touch {
+        width: 290px;
+    }
+
+    #footer-right-container #get-in-touch h4 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--acquamarineblue);
+        margin-bottom: 19px;
+    }
+
+    #footer-right-container #get-in-touch .link-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #footer-right-container #get-in-touch .link-container div {
+        display: flex;
+        align-items: center;
+    }
+
+    #footer-right-container #get-in-touch .link-container div img {
+        margin-right: 7px;
+        transform: scale(.8);
+    }
+
+    #footer-right-container #get-in-touch div a {
+        font-size: 1.11rem;
+        color: var(--lightbrown);
+    }
 }
