@@ -61,3 +61,54 @@
     text-align: center;
     margin-top: 20px;
 }
+
+/*************** Web view *************/
+@media screen and (min-width: 1081px) {
+    #picking-icons-container {
+        position: relative;
+        margin-top: 83px;
+        padding-bottom: 52px;
+        width: 100%;
+    }
+
+    #picking-icons-container #eternal-background {
+        position: absolute;
+        background-color: var(--lightblue);
+        width: 100vw;
+        height: 100%;
+        z-index: -100;
+    }
+
+    #picking-icons-container h2 {
+        font-size: 2.5rem;
+        margin-top: 86px;
+    }
+
+    #picking-icons-cards-container {
+        max-width: 1200px;
+        justify-content: center;
+        margin-top: 82px;/* -- */
+        gap: 60px;
+    }
+
+    #picking-icons-cards-container .picking-icons-card {
+        width: 350px;
+        height: 317px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .picking-icons-card .picking-icons-card-image-container {
+        margin-top: 28px;
+    }
+    
+    .picking-icons-card h3 {
+        color: var(--darkcyan);
+        margin-top: 38px;
+    }
+    
+    .picking-icons-card p {
+        margin-top: 20px;
+        width: 300px;
+    }
+}
