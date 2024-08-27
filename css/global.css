@@ -14,6 +14,7 @@
     --purple: #6475ed;
     --darkblue: #2b3143;
     --acquamarineblue: #01016b;
+    --dayblue: #002CFF;
     --seablue: #0256ff;
     --blue: #345cfb;
     --oceanblue: #5c76f1;
@@ -21,16 +22,33 @@
     --darkcyan: #2083fd;
     --cyan: #00b1ff;
     --navyblue: #73a6c9;
+    --sunsetblue: #D9E3FE;
     --lightblue: #ecf5ff;
+    --clearblue: #F4FCFF;
     --lightbrown: #7b7a7b;
+    --bluegray: #657E98;
     --grayfromblue: #979ba8;
     --midgray: #999ea8;
     --lightgray: #d9d9d8;
     --logoshadow: rgba(0, 0, 0, 0.38);
     --cardshadow: rgba(0, 52, 255, 0.49);
+    --menushadow: rgba(0, 0, 0, 0.75);
+    --dropdownshadow: rgba(0, 0, 0, 0.2);
+    --callusbuttonshadow: rgba(0, 0, 0, 0.29);
 }
 
 ::selection {
     background-color: var(--cyan);
     color: var(--white);
+}
+
+/*************** Web view *************/
+/**Breakpoint for centering container */
+@media screen and (min-width: 1081px) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
