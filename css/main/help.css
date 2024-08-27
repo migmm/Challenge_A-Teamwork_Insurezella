@@ -10,7 +10,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 76px;
-    height: 697px;
 }
 
 #help-container h2 {
@@ -99,10 +98,6 @@
 /*************** Web view *************/
 @media screen and (min-width: 1081px) {
     #help-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 76px;
         height: 1400px;
     }
 
@@ -123,7 +118,6 @@
     .help-card .help-image-container {
         width: 487px;
         height: 228px;
-        overflow: hidden;
     }
 
     .help-card .help-info-container {
@@ -131,10 +125,6 @@
         padding: 34px;
     }
 
-    .help-card .help-image-container img {
-        width: 102%;
-        transform: translateY(-12%);
-    }
     .help-card .help-info-container h3 {
         font-size: 1.78rem;
         margin-top: 17px;
@@ -186,5 +176,18 @@
 
     .help-dots {
         display: none;
+    }
+}
+
+/********** Extra Breakpoints *********/
+@media screen and (max-width: 985px) {
+    .help-card:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    #help-card-container {
+        gap: 5px;
     }
 }

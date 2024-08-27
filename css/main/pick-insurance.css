@@ -87,7 +87,7 @@
     #picking-icons-cards-container {
         max-width: 1200px;
         justify-content: center;
-        margin-top: 82px;/* -- */
+        margin-top: 82px;
         gap: 60px;
     }
 
@@ -110,5 +110,20 @@
     .picking-icons-card p {
         margin-top: 20px;
         width: 300px;
+    }
+}
+
+/********** Extra Breakpoints *********/
+@media screen and (max-width: 850px) {
+    #picking-icons-container h2 {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #picking-icons-cards-container {
+        gap: 10px;
     }
 }
