@@ -23,6 +23,8 @@
 #help-card-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
     justify-content: center;
     margin-top: 62px;
 }
@@ -74,6 +76,11 @@
     margin-top: 30px;
 }
 
+.help-card:nth-child(3),
+.help-card:nth-child(4) {
+    display: none;
+}
+
 .help-dots {
     display: flex;
     flex-direction: row;
@@ -87,4 +94,97 @@
     height: 17px;
     border-radius: 50%;
     background-color: var(--oceanblue);
+}
+
+/*************** Web view *************/
+@media screen and (min-width: 1081px) {
+    #help-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 76px;
+        height: 1400px;
+    }
+
+    #help-card-container {
+        flex-wrap: wrap;
+        overflow: unset;
+        gap: 21px;
+        margin-top: 38px;
+    }
+
+    .help-card {
+        width: 490px;
+        margin-left: 49px;
+        margin-right: 49px;
+        position: relative;
+    }
+
+    .help-card .help-image-container {
+        width: 487px;
+        height: 228px;
+        overflow: hidden;
+    }
+
+    .help-card .help-info-container {
+        margin-left: 0px;
+        padding: 34px;
+    }
+
+    .help-card .help-image-container img {
+        width: 102%;
+        transform: translateY(-12%);
+    }
+    .help-card .help-info-container h3 {
+        font-size: 1.78rem;
+        margin-top: 17px;
+    }
+
+    .help-card .help-info-container p {
+        font-size: 1.2rem;
+        line-height: 2.1rem;
+        margin-top: 36px;
+        width: 444px;
+    }
+
+    .help-card .help-info-container span {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--blue);
+        margin-top: 41px;
+        cursor: pointer;
+    }
+
+    /************* Cards 3 and 4 **********/
+
+    .help-card:nth-child(3),
+    .help-card:nth-child(4) {
+        display: block;
+    }
+
+    .help-card:nth-child(3) .help-info-container,
+    .help-card:nth-child(4) .help-info-container {
+        width: 422px;
+        -webkit-box-shadow: 1px 3px 14px 4px rgba(247, 247, 247, 1);
+        -moz-box-shadow: 1px 3px 14px 4px rgba(247, 247, 247, 1);
+        box-shadow: 1px 3px 14px 4px rgba(247, 247, 247, 1);
+        overflow-x: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 228px;
+    }
+
+    .help-card:nth-child(3) .help-info-container span,
+    .help-card:nth-child(4) .help-info-container span {
+        margin-top: 89px;
+    }
+
+    .help-card:nth-child(3) .help-image-container img {
+        width: 125%;
+    }
+
+    .help-dots {
+        display: none;
+    }
 }
