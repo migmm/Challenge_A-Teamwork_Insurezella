@@ -4,15 +4,6 @@
 /**************************************/
 
 /************* Mobile view ************/
-#footer-container {
-    width: 100%;
-    position: relative;
-    overflow: visible;
-    height: 230px;
-    background-color: var(--oceanblue);
-    margin-top: 400px;
-    margin-bottom: 357px;
-}
 
 /************ Left panel **************/
 #footer-left-container {
@@ -103,18 +94,13 @@
 
 /*************** Web view *************/
 @media screen and (min-width: 1081px) {
-    #footer-container {
-        height: 84px;
-        background-color: var(--skyblue);
-        margin-top: 900px;
-        margin-bottom: 0;
-    }
-    
+
     #footer-left-container {
+        position: absolute;
         top: -262px;
-        width: 683px;
+        width: 783px;
         height: 296px;
-        left: 101px;
+        right: 44%;
     }
     
     #footer-left-container #general-info {
