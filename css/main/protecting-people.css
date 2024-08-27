@@ -59,3 +59,44 @@
     display: block;
 }
 
+/*************** Web view *************/
+@media screen and (min-width: 1081px) {
+    .protecting-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 58px;
+    }
+    
+    .protecting-container .protecting-description-container {
+        margin-top: 39px;
+        margin-left: 81px;
+        max-width: 570px;
+    }
+
+    .protecting-container .protecting-image-container {
+        width: 529px;
+    }
+
+    .protecting-container .protecting-description-container h2 {
+        font-size: 2.5rem;
+        line-height: 3.1rem;
+    }
+
+    .protecting-container .protecting-description-container p {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        margin-top: 38px;
+        max-width: 530px;
+    }
+
+    .protecting-container .protecting-description-container button {
+        border: none;
+        width: 260px;
+        height: 41px;
+        background-color: var(--seablue);
+        color: var(--white);
+        font-size: .9rem;
+        margin-top: 36px;
+    }
+}
