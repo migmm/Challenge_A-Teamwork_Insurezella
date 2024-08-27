@@ -66,16 +66,14 @@
     background-color: var(--oceanblue);
 }
 
-
 .card:nth-child(3),
 .card:nth-child(4),
 .card:nth-child(5) {
-    display:none;
+    display: none;
 }
 
 /*************** Web view *************/
 @media screen and (min-width: 1081px) {
-
     #plans-container {
         margin-top: 27px;
     }
@@ -123,8 +121,15 @@
     }
 
     .card:nth-child(3),
-.card:nth-child(4),
-.card:nth-child(5) {
-    display:block;
+    .card:nth-child(4),
+    .card:nth-child(5) {
+        display: block;
+    }
 }
+
+/********** Extra Breakpoints *********/
+@media screen and (max-width: 715px) {
+    .card:nth-child(2) {
+        display: none;
+    }
 }
