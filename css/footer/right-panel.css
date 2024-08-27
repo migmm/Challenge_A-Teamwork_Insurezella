@@ -98,25 +98,15 @@
     }
 
     #footer-right-container #company h4 {
-        font-family: 'Poppins', sans-serif;
         font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--acquamarineblue);
     }
 
     #footer-right-container #company .company-links {
         margin-top: 21px;
     }
 
-    #footer-right-container #company .company-links div {
-        margin-top: 13px;
-    }
-
     #footer-right-container #company .company-links div a {
-        font-family: 'Poppins', sans-serif;
         font-size: 1.11rem;
-        color: var(--lightbrown);
-        text-decoration: none;
         line-height: 1.55rem;
     }
 
@@ -125,30 +115,50 @@
     }
 
     #footer-right-container #get-in-touch h4 {
-        font-family: 'Poppins', sans-serif;
         font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--acquamarineblue);
         margin-bottom: 19px;
-    }
-
-    #footer-right-container #get-in-touch .link-container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #footer-right-container #get-in-touch .link-container div {
-        display: flex;
-        align-items: center;
     }
 
     #footer-right-container #get-in-touch .link-container div img {
         margin-right: 7px;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     #footer-right-container #get-in-touch div a {
         font-size: 1.11rem;
-        color: var(--lightbrown);
     }
 }
+
+/*************** Hovers ***************/
+@media (hover: hover) {
+    #footer-right-container #company .company-links div a:hover {
+        color: var(--acquamarineblue);
+    }
+
+    #footer-right-container #get-in-touch div a:hover {
+        color: var(--acquamarineblue);
+    }
+}
+
+/********** Extra Breakpoints *********/
+@media screen and (max-width: 940px) {
+    #footer-right-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    #footer-right-container #company {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1300px) {
+    #footer-right-container #company {
+        margin-left: 10px;
+        width: 193px;
+    }
+
+    #footer-right-container {
+        width: 603px;
+    }
+} 
