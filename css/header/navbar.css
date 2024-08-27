@@ -24,28 +24,56 @@
     box-shadow: 1px 0px 0px 0px var(--logoshadow);
 }
 
-#navbar-menu ul {
-    display: none;
+#navbar-menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+#menuToggle:checked ~ #navbar-menu {
+    left: 0;
 }
 
 #navbar-menu ul {
-    color: var(--white);
-    background-color: var(--purple);
-    margin-left: 200px;
-    margin-top: 442px;
-    width: 330px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
     padding: 20px;
+    list-style: none;
+    color: var(--white);
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
-    list-style: none;
-    -webkit-box-shadow: 10px 10px 24px -2px var(--menushadow);
-    -moz-box-shadow: 10px 10px 24px -2px var(--menushadow);
-    box-shadow: 10px 10px 24px -2px var(--menushadow);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar-menu ul li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 #navbar-menu ul a {
     text-decoration: none;
     color: var(--white);
+}
+
+#navbar-menu ul li .dropdown-content {
+    display: block;
+    flex-direction: column;
+}
+
+#menuToggle:checked ~ #navbar-menu {
+    left: 0;
 }
 
 #headline {
@@ -69,18 +97,19 @@
     color: var(--white);
 }
 
-#headline p:nth-child(2) {
-    margin-left: 66px;
+#headline p:nth-child(2),
+#headline p:nth-child(3) {
     font-size: 0.7rem;
     font-weight: 500;
     color: var(--white);
 }
 
+#headline p:nth-child(2) {
+    margin-left: 66px;
+}
+
 #headline p:nth-child(3) {
     margin-left: 27px;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: var(--white);
 }
 
 #headline p:nth-child(3),
@@ -97,13 +126,8 @@
     display: none;
 }
 
-#menuToggle:checked ~ #navbar-menu ul {
-    display: block;
-}
-
 /*************** Web view *************/
 @media screen and (min-width: 1081px) {
-
     #navbar-container {
         display: flex;
         flex-direction: row;
@@ -128,13 +152,13 @@
         border-radius: 12px;
         border: 1px solid var(--acquamarineblue);
         margin-top: 4px;
-        -webkit-box-shadow: 1px 0px 0px 0px var(--logoshadow);
-        -moz-box-shadow: 1px 0px 0px 0px var(--logoshadow);
-        box-shadow: 1px 0px 0px 0px var(--logoshadow);
+        margin-bottom: 3px;
     }
 
     /************* Navbar menu ************/
     /* Unset styles */
+
+    #navbar-menu,
     #navbar-menu ul {
         display: flex;
         color: unset;
@@ -149,10 +173,23 @@
         -webkit-box-shadow: unset;
         -moz-box-shadow: unset;
         box-shadow: unset;
+        position: unset;
+        top: unset;
+        left: unset;
+        width: unset;
+        height: unset;
+        background-color: var(--white);
+        transition: unset;
+        z-index: unset;
+    }
+
+    #navbar-menu ul {
+        flex-direction: row;
     }
 
     #navbar-menu ul li {
         display: flex;
+        flex-direction: row;
         list-style: none;
         font-family: 'Poppins', sans-serif;
         font-size: 0.8rem;
@@ -181,6 +218,10 @@
         text-underline-offset: 5px;
     }
 
+    #navbar-menu ul li .dropdown-content {
+        display: none;
+    }
+
     /************** Dropdown **************/
     .dropdown-content {
         display: none;
@@ -188,9 +229,9 @@
         background-color: var(--white);
         box-shadow: 0px 8px 16px var(--dropdownshadow);
         padding: 10px 0;
-        z-index: 1;
+        z-index: 100;
         min-width: 160px;
-        top: 95px;
+        top: 90px;
     }
 
     .dropdown-content a {
@@ -243,6 +284,7 @@
         background-color: var(--skyblue);
         width: 100%;
         order: unset;
+        left: unset;
     }
 
     #headline p {
@@ -274,16 +316,27 @@
     }
 }
 
-/********** Exrta Breakpoints *********/
-@media screen and (max-width: 1060px) {
+/*************** Hovers ***************/
+@media (hover: hover) {
+    #navbar-menu ul li a:hover {
+        color: var(--bluegray);
+    }
+
+    #call-us-button-container button:hover {
+        background-color: var(--skyblue);
+    }
+}
+
+/********** Extra Breakpoints *********/
+@media screen and (max-width: 1425px) {
+    #navbar-container {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1055px) {
     #headline p:nth-child(1) {
         display: none;
     }
 }
 
-@media screen and (max-width: 774px) {
-    #headline p:nth-child(2),
-    #headline p:nth-child(3) {
-        display: none;
-    }
-}
