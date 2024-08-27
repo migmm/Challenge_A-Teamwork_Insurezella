@@ -12,10 +12,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 225px;
     width: 43px;
     height: 32px;
     cursor: pointer;
+    position: absolute;
+    top: 41px;
+    left: 230px;
 }
 
 .hamburguer-icon div {
@@ -40,4 +42,11 @@
     transform: rotate(-45deg);
     position: relative;
     top: -14px;
+}
+
+/*************** Web view *************/
+@media screen and (min-width: 1081px) {
+    .hamburguer-icon {
+        display: none;
+    }
 }

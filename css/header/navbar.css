@@ -3,16 +3,8 @@
 /**************************************/
 
 /************* Mobile view ************/
+
 /**************** Navbar **************/
-#header-container {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--purple);
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    height: 104px;
-}
 
 #navbar-container {
     width: 268px;
@@ -34,6 +26,26 @@
 
 #navbar-menu ul {
     display: none;
+}
+
+#navbar-menu ul {
+    color: var(--white);
+    background-color: var(--purple);
+    margin-left: 200px;
+    margin-top: 442px;
+    width: 330px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    list-style: none;
+    -webkit-box-shadow: 10px 10px 24px -2px var(--menushadow);
+    -moz-box-shadow: 10px 10px 24px -2px var(--menushadow);
+    box-shadow: 10px 10px 24px -2px var(--menushadow);
+}
+
+#navbar-menu ul a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 #headline {
@@ -85,3 +97,193 @@
     display: none;
 }
 
+#menuToggle:checked ~ #navbar-menu ul {
+    display: block;
+}
+
+/*************** Web view *************/
+@media screen and (min-width: 1081px) {
+
+    #navbar-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-top: solid 6px var(--clearblue);
+        border-bottom: solid 6px var(--clearblue);
+    }
+
+    #logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        height: 100%;
+    }
+
+    #logo-container a img {
+        width: 62px;
+        height: 62px;
+        border-radius: 12px;
+        border: 1px solid var(--acquamarineblue);
+        margin-top: 4px;
+        -webkit-box-shadow: 1px 0px 0px 0px var(--logoshadow);
+        -moz-box-shadow: 1px 0px 0px 0px var(--logoshadow);
+        box-shadow: 1px 0px 0px 0px var(--logoshadow);
+    }
+
+    /************* Navbar menu ************/
+    /* Unset styles */
+    #navbar-menu ul {
+        display: flex;
+        color: unset;
+        background-color: unset;
+        margin-left: unset;
+        margin-top: unset;
+        width: unset;
+        padding: unset;
+        font-family: unset;
+        font-size: unset;
+        list-style: none;
+        -webkit-box-shadow: unset;
+        -moz-box-shadow: unset;
+        box-shadow: unset;
+    }
+
+    #navbar-menu ul li {
+        display: flex;
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    #navbar-menu ul li a {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    #navbar-menu ul li::after {
+        content: '|';
+        color: #000;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #navbar-menu ul li:last-child::after {
+        content: '';
+    }
+
+    #navbar-menu ul li a.active {
+        text-decoration: underline;
+        color: var(--bluegray);
+        text-underline-offset: 5px;
+    }
+
+    /************** Dropdown **************/
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--white);
+        box-shadow: 0px 8px 16px var(--dropdownshadow);
+        padding: 10px 0;
+        z-index: 1;
+        min-width: 160px;
+        top: 95px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--white);
+    }
+
+    #navbar-menu ul li:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-toggle::after {
+        content: ' ▼';
+        font-size: 12px;
+    }
+
+    #call-us-button-container {
+        display: block;
+    }
+
+    #call-us-button-container button {
+        color: var(--white);
+        background-color: var(--dayblue);
+        border: 1px solid var(--oceanblue);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        width: 136px;
+        height: 46px;
+        border-radius: 25px;
+        cursor: pointer;
+        -webkit-box-shadow: 6px 10px 27px 3px var(--callusbuttonshadow);
+        -moz-box-shadow: 6px 10px 27px 3px var(--callusbuttonshadow);
+        box-shadow: 6px 10px 27px 3px var(--callusbuttonshadow);
+    }
+
+    /************** Headline **************/
+    #headline {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-right: 0;
+        background-color: var(--skyblue);
+        width: 100%;
+        order: unset;
+    }
+
+    #headline p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    #headline p:nth-child(1) {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--white);
+        flex-grow: 0.67;
+    }
+
+    #headline p:nth-child(2),
+    #headline p:nth-child(3) {
+        margin-left: 66px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: var(--white);
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .header-icon {
+        margin-right: 7px;
+    }
+}
+
+/********** Exrta Breakpoints *********/
+@media screen and (max-width: 1060px) {
+    #headline p:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 774px) {
+    #headline p:nth-child(2),
+    #headline p:nth-child(3) {
+        display: none;
+    }
+}
