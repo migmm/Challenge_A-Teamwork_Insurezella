@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Insurezella</title>
 </head>
 
 <body>
     <header>
+        <div id="long-background"></div>
         <div id="header-container">
             <div id="headline">
                 <p>
@@ -28,7 +30,7 @@
 
             <div id="navbar-container">
                 <div id="logo-container">
-                    <img src="img/logo.png" alt="Company logo">
+                    <a href="#"><img src="img/logo.png" alt="Company logo"></a>
                 </div>
 
                 <input type="checkbox" id="menuToggle">
@@ -41,10 +43,18 @@
                 <nav id="navbar-menu">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#" class="active">Home</a>
                         </li>
                         <li>
-                            <a href="#">Find Insurance</a>
+                            <a href="#" class="dropdown-toggle">Find Insurance</a>
+                            <div class="dropdown-content">
+                                <a href="#">Health Insurance</a>
+                                <a href="#">Medicare Supplement</a>
+                                <a href="#">Life Insurance</a>
+                                <a href="#">Medicare Advantage</a>
+                                <a href="#">ACA / Obamacare</a>
+                                <a href="#">Short-Term Medical</a>
+                            </div>
                         </li>
                         <li>
                             <a href="#">Learn</a>
@@ -56,7 +66,7 @@
                 </nav>
 
                 <div id="call-us-button-container">
-                    <button>Call Us Now</button>
+                    <button>Call Us Now <i class="fa-solid fa-arrow-right-long"></i></button>
                 </div>
             </div>
 
@@ -65,344 +75,336 @@
 
     <main>
         <div id="main-container">
-            <section>
+                <section>
+                    <div class="hero">
+                        <div id="hero-divisor"></div>
+                        <div id="hero-image"></div>
+                        <div id="hero-content">
+                            <h1>YOUR GUIDE TO QUALITY COVERAGE</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <button>FIND PLANS</button>
+                        </div>
+                    </div>
+                </section>
 
-                <main>
-                    <div id="main-container">
-                        <section>
-                            <div class="hero">
-                                <div id="hero-divisor"></div>
-                                <div id="hero-image"></div>
-                                <div id="hero-content">
-                                    <h1>YOUR GUIDE TO QUALITY COVERAGE</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                    <button>FIND PLANS</button>
+                <section>
+                    <div id="plans-container">
+                        <div class="slider">
+                            <div class="card">
+                                <div class="image-container">
+                                    <img src="img/health-insurance-icon-card.png" alt="Medicare icon">
+                                </div>
+                                <div class="title-container">
+                                    <h2>Health insurance</h2>
                                 </div>
                             </div>
-                        </section>
+                            <div class="card">
+                                <div class="image-container">
+                                    <img src="img/medicare-supplement-icon-card.png" alt="Medicare icon">
+                                </div>
+                                <div class="title-container">
+                                    <h2>Medicare supplement</h2>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-container">
+                                    <img src="img/medicare-advantage-icon-card.png" alt="Medicare advantage icon">
+                                </div>
+                                <div class="title-container">
+                                    <h2>Medicare Advantage</h2>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-container">
+                                    <img src="img/life-insurance-icon-card.png" alt="Life insurance icon">
+                                </div>
+                                <div class="title-container">
+                                    <h2>Life insurance</h2>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-container">
+                                    <img src="img/aca-obamacare-icon-card.png" alt="Obamacare icon">
+                                </div>
+                                <div class="title-container">
+                                    <h2>ACA obamacare</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="simple-plan-container">
+                        <div class="plan-image-container">
+                            <img src="img/committed-help.png" alt="A woman smiling">
+                        </div>
+                        <div class="plan-description-container">
+                            <h2>Committed to help you find the right plan</h2>
+                            <p>Insurance is an important financial tool that can help you
+                                protect yourself and your loved ones from financial losses in the
+                                event of an unexpected event. It is important to consider your
+                                individual needs and circumstances when choosing the right
+                                insurance coverage for you and your family.
+                                <button>ABOUT INSUREZELLA</button>
+                            <div class="plan-advantages">
+                                <div class="props-container">
+                                    <img src="img/save-money-icon.png" alt="Icon of a hand with a bag of money">
+                                    <span>Save Money Compare Plans</span>
+                                </div>
+                                <div class="props-container">
+                                    <img src="img/licensed-agents-icon.png" alt="Icon of an agent at the phone">
+                                    <span>Licensed Agents</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                        <section>
-                            <div id="plans-container">
-                                <div class="slider">
-                                    <div class="card">
-                                        <div class="image-container">
-                                            <img src="img/health-insurance-icon-card.png" alt="Medicare icon">
-                                        </div>
-                                        <div class="title-container">
-                                            <h2>Health insurance</h2>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="image-container">
-                                            <img src="img/medicare-supplement-icon-card.png" alt="Medicare icon">
-                                        </div>
-                                        <div class="title-container">
-                                            <h2>Medicare supplement</h2>
-                                        </div>
-                                    </div>
-                          <!--           <div class="card">
-                                        <div class="image-container">
-                                            <img src="img/medicare-advantage-icon-card.png"
-                                                alt="Medicare advantage icon">
-                                        </div>
-                                        <div class="title-container">
-                                            <h2>Medicare Advantage</h2>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="image-container">
-                                            <img src="img/life-insurance-icon-card.png" alt="Life insurance icon">
-                                        </div>
-                                        <div class="title-container">
-                                            <h2>Life insurance</h2>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="image-container">
-                                            <img src="img/aca-obamacare-icon-card.png" alt="Obamacare icon">
-                                        </div>
-                                        <div class="title-container">
-                                            <h2>ACA obamacare</h2>
-                                        </div>
-                                    </div> -->
+                <section>
+                    <div id="picking-icons-container">
+                        <div id="eternal-background"></div>
+                        <h2>Pick the insurance that suits your needs.</h2>
+                        <div id="picking-icons-cards-container">
+                            <div class="picking-icons-card">
+                                <div class="picking-icons-card-image-container">
+                                    <img src="img/health-insurance-icon.png"
+                                        alt="Icon of three persons under a umbrella">
                                 </div>
-                                <div class="dots">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                                <h3>Health Insurance</h3>
+                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem ipsum is simply dummy</p>
                             </div>
-                            <div class="simple-plan-container">
-                                <div class="plan-image-container">
-                                    <img src="img/committed-help.png" alt="A woman smiling">
+                            <div class="picking-icons-card">
+                                <div class="picking-icons-card-image-container">
+                                    <img src="img/medicare-icon.png" alt="Icon of a medical cross under a umbrella">
                                 </div>
-                                <div class="plan-description-container">
-                                    <h2>Committed to help you find the right plan</h2>
-                                    <p>Insurance is an important financial tool that can help you
-                                        protect yourself and your loved ones from financial losses in the
-                                        event of an unexpected event. It is important to consider your
-                                        individual needs and circumstances when choosing the right
-                                        insurance coverage for you and your family.
-                                        <button>ABOUT INSUREZELLA</button>
-                                    <div class="plan-advantages">
-                                        <div class="props-container">
-                                            <img src="img/save-money-icon.png" alt="Icon of a hand with a bag of money">
-                                            <span>Save Money Compare Plans</span>
-                                        </div>
-                                        <div class="props-container">
-                                            <img src="img/licensed-agents-icon.png" alt="Icon of an agent at the phone">
-                                            <span>Licensed Agents</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                <h3>Medicare Supplement</h3>
+                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem ipsum is simply dummy</p>
                             </div>
-                        </section>
-
-                        <section>
-                            <div id="picking-icons-container">
-                                <h2>Pick the insurance that suits your needs.</h2>
-                                <div id="picking-icons-cards-container">
-                                    <div class="picking-icons-card">
-                                        <div class="picking-icons-card-image-container">
-                                            <img src="img/health-insurance-icon.png"
-                                                alt="Icon of three persons under a umbrella">
-                                        </div>
-                                        <h3>Health Insurance</h3>
-                                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem ipsum is simply dummy</p>
-                                    </div>
-                                    <div class="picking-icons-card">
-                                        <div class="picking-icons-card-image-container">
-                                            <img src="img/medicare-icon.png"
-                                                alt="Icon of a medical cross under a umbrella">
-                                        </div>
-                                        <h3>Medicare Supplement</h3>
-                                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem ipsum is simply dummy</p>
-                                    </div>
-                                    <div class="picking-icons-card">
-                                        <div class="picking-icons-card-image-container">
-                                            <img src="img/life-insurance-icon.png"
-                                                alt="Icon of a two hands holding a person">
-                                        </div>
-                                        <h3>Life Insurance</h3>
-                                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem ipsum is simply dummy</p>
-                                    </div>
-                                    <div class="picking-icons-card">
-                                        <div class="picking-icons-card-image-container">
-                                            <img src="img/medicare-advantage-icon.png" alt="Icon of an ID card">
-                                        </div>
-                                        <h3>Medicare Advantage</h3>
-                                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem ipsum is simply dummy</p>
-                                    </div>
-                                    <div class="picking-icons-card">
-                                        <div class="picking-icons-card-image-container">
-                                            <img src="img/obamacare-icon.png"
-                                                alt="Icon of a hand holding money symbol and stock actions">
-                                        </div>
-                                        <h3>ACA / Obamacare</h3>
-                                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem ipsum is simply dummy</p>
-                                    </div>
-                                    <div class="picking-icons-card">
-                                        <div class="picking-icons-card-image-container">
-                                            <img src="img/short-term-icon.png"
-                                                alt="Icon of a person besides a wall clock">
-                                        </div>
-                                        <h3>Short-Term Medical</h3>
-                                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem ipsum is simply dummy</p>
-                                    </div>
+                            <div class="picking-icons-card">
+                                <div class="picking-icons-card-image-container">
+                                    <img src="img/life-insurance-icon.png" alt="Icon of a two hands holding a person">
                                 </div>
+                                <h3>Life Insurance</h3>
+                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem ipsum is simply dummy</p>
                             </div>
-                        </section>
-                        <section>
-                            <div class="protecting-container">
-                                <div class="protecting-image-container">
-                                    <img src="img/protecting.png" alt="A man talking with two women at the office">
+                            <div class="picking-icons-card">
+                                <div class="picking-icons-card-image-container">
+                                    <img src="img/medicare-advantage-icon.png" alt="Icon of an ID card">
                                 </div>
-                                <div class="protecting-description-container">
-                                    <h2>Protecting people, one policy at time</h2>
-                                    <p>We are commited to delivering the highest standards of pro-
-                                        tection, tailored to meet the unique needs of each individual and
-                                        family. Our dedicated team of professionals works tirelessly to
-                                        offer comprehensive insurance solutions that not only safeguard
-                                        your assets but also offer you the support and assistance you
-                                        need in the times of uncertainty.
-                                        <button>LEARN MORE</button>
-                                </div>
+                                <h3>Medicare Advantage</h3>
+                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem ipsum is simply dummy</p>
                             </div>
-                            <div id="help-container">
-                                <h2>We're here to help</h2>
-                                <div id="help-card-container">
-                                    <div class="help-card">
-                                        <div class="help-image-container">
-                                            <img src="img/doctor.jpg" alt="A photo of a doctor 
+                            <div class="picking-icons-card">
+                                <div class="picking-icons-card-image-container">
+                                    <img src="img/obamacare-icon.png"
+                                        alt="Icon of a hand holding money symbol and stock actions">
+                                </div>
+                                <h3>ACA / Obamacare</h3>
+                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem ipsum is simply dummy</p>
+                            </div>
+                            <div class="picking-icons-card">
+                                <div class="picking-icons-card-image-container">
+                                    <img src="img/short-term-icon.png" alt="Icon of a person besides a wall clock">
+                                </div>
+                                <h3>Short-Term Medical</h3>
+                                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="protecting-container">
+                        <div class="protecting-image-container">
+                            <img src="img/protecting.png" alt="A man talking with two women at the office">
+                        </div>
+                        <div class="protecting-description-container">
+                            <h2>Protecting people, one policy at time</h2>
+                            <p>We are commited to delivering the highest standards of pro-
+                                tection, tailored to meet the unique needs of each individual and
+                                family. Our dedicated team of professionals works tirelessly to
+                                offer comprehensive insurance solutions that not only safeguard
+                                your assets but also offer you the support and assistance you
+                                need in the times of uncertainty.
+                                <button>LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div id="help-container">
+                        <h2>We're here to help</h2>
+                        <div id="help-card-container">
+                            <div class="help-card">
+                                <div class="help-image-container">
+                                    <img src="img/doctor.jpg" alt="A photo of a doctor 
                                             showing tests results to a woman with her son">
-                                        </div>
-                                        <div class="help-info-container">
-                                            <h3>Health Insurance</h3>
-                                            <p>Get the Coverage You Need Today. Speak
-                                                with an Agent to Learn about Our Plan Options
-                                                Now. Our Health Insurance Agency Provides
-                                                You with Plans That Meet Your Needs.</p>
-                                            <span>Compare plans -></span>
-                                        </div>
-                                    </div>
-                                    <div class="help-card">
-                                        <div class="help-image-container">
-                                            <img src="img/family-together.jpg" alt="A photo of a 
+                                </div>
+                                <div class="help-info-container">
+                                    <h3>Health Insurance</h3>
+                                    <p>Get the Coverage You Need Today. Speak
+                                        with an Agent to Learn about Our Plan Options
+                                        Now. Our Health Insurance Agency Provides
+                                        You with Plans That Meet Your Needs.</p>
+                                    <span>Compare plans <i class="fa-solid fa-arrow-right-long"></i></span>
+                                </div>
+                            </div>
+                            <div class="help-card">
+                                <div class="help-image-container">
+                                    <img src="img/family-together.jpg" alt="A photo of a 
                                             family hugging each other">
-                                        </div>
-                                        <div class="help-info-container">
-                                            <h3>Life Insurance</h3>
-                                            <p>Life insurance allows you to save and build
-                                                wealth over time while also protecting your
-                                                family should the worst happen.</p>
-                                            <span>Compare plans -></span>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="help-card">
-                                        <div class="help-image-container">
-                                            <img src="img/medical-appointment.jpg"
-                                                alt="A photo of a doctor setting an appointment">
-                                        </div>
-                                        <div class="help-info-container">
-                                            <h3>Medicare Supplement</h3>
-                                            <p>With Medicare supplements, you won't have
-                                                medical cost surprises, which could wreck
-                                                you budget. Medicare supplements can help
-                                                protect you finances from high costs, which
-                                                can destroy your nest egg.</p>
-                                            <span>View plans -></span>
-                                        </div>
-                                    </div>
-                                    <div class="help-card">
-                                        <div class="help-image-container">
-                                            <img src="img/man-signing.jpg" alt="A photo of a man signing a contract">
-                                        </div>
-                                        <div class="help-info-container">
-                                            <h3>Medicare Advantage</h3>
-                                            <p>Medicare Advantage Plans cover all Original
-                                                Medicare services, and some offer drug,
-                                                vision, hearing, dental or wellness coverage</p>
-                                            <span>View plans -></span>
-                                        </div>
-                                    </div> -->
                                 </div>
-                                <div class="help-dots">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                <div class="help-info-container">
+                                    <h3>Life Insurance</h3>
+                                    <p>Life insurance allows you to save and build
+                                        wealth over time while also protecting your
+                                        family should the worst happen.</p>
+                                    <span>Compare plans <i class="fa-solid fa-arrow-right-long"></i></span>
                                 </div>
                             </div>
-                        </section>
-                    </div>
-                </main>
-
-                <footer>
-                    <div id="footer-container">
-                        <div id="footer-left-container">
-                            <div id="general-info">
-                                <div id="info-logo-container">
-                                    <img src="img/logo.png" alt="Logo">
+                            <div class="help-card">
+                                <div class="help-image-container">
+                                    <img src="img/medical-appointment.jpg"
+                                        alt="A photo of a doctor setting an appointment">
                                 </div>
-                                <p>"Discover the Peace of Mind You Deserve with Insurezella
-                                    "Your Reliable Insurance Umbrella"</p>
-                                <div id="info-socials">
-                                    <a href="https://www.facebook.com/profile.php?id=100088031780976" target="_blank"><i
-                                            class="fab fa-facebook social-icon"></i></a>
-                                    <a href="https://x.com/insurezella" target="_blank"><i
-                                            class="fab fa-twitter social-icon"></i></a>
-                                    <a href="https://www.instagram.com/insurezella/" target="_blank"><i
-                                            class="fab fa-instagram social-icon"></i></a>
-                                    <a href="https://www.linkedin.com/company/insurezella/" target="_blank"><i
-                                            class="fab fa-linkedin-in social-icon"></i></a>
+                                <div class="help-info-container">
+                                    <h3>Medicare Supplement</h3>
+                                    <p>With Medicare supplements, you won't have
+                                        medical cost surprises, which could wreck
+                                        you budget. Medicare supplements can help
+                                        protect you finances from high costs, which
+                                        can destroy your nest egg.</p>
+                                    <span>View plans <i class="fa-solid fa-arrow-right-long"></i></span>
                                 </div>
                             </div>
-                            <div id="services">
-                                <h4>Services</h4>
-                                <div id="services-links">
-                                    <div>
-                                        <img src="img/umbrella-footer-icon.png" alt="Umbrella icon">
-                                        <a href="#">Health Insurance</a>
-                                    </div>
-                                    <div>
-                                        <img src="img/life-insurance-footer-icon.png" alt="Life iInsurance icon">
-                                        <a href="#">Life Insurance</a>
-                                    </div>
-                                    <div>
-                                        <img src="img/supplements-footer-icon.png" alt="Medicare Supplement icon">
-                                        <a href="#">Medicare Supplement</a>
-                                    </div>
-                                    <div>
-                                        <img src="img/id-footer-icon.png" alt="Medicare Advantage icon">
-                                        <a href="#">Medicare Advantage</a>
-                                    </div>
-                                    <div>
-                                        <img src="img/obamacare-footer-icon.png" alt="Obamacare icon">
-                                        <a href="#">(ACA)Obamacare</a>
-                                    </div>
+                            <div class="help-card">
+                                <div class="help-image-container">
+                                    <img src="img/man-signing.jpg" alt="A photo of a man signing a contract">
+                                </div>
+                                <div class="help-info-container">
+                                    <h3>Medicare Advantage</h3>
+                                    <p>Medicare Advantage Plans cover all Original
+                                        Medicare services, and some offer drug,
+                                        vision, hearing, dental or wellness coverage</p>
+                                    <span>View plans <i class="fa-solid fa-arrow-right-long"></i></span>
                                 </div>
                             </div>
                         </div>
-                        <div id="footer-right-container">
-                            <div id="company">
-                                <h4>Company</h4>
-                                <div class="company-links">
-                                    <div>
-                                        <a href="#">About Us</a>
-                                    </div>
-                                    <div>
-                                        <a href="#">Careers</a>
-                                    </div>
-                                    <div>
-                                        <a href="#">Industry News</a>
-                                    </div>
-                                    <div>
-                                        <a href="#">Privacy Policy</a>
-                                    </div>
-                                    <div>
-                                        <a href="#">Terms & Conditions</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="get-in-touch">
-                                <h4>Get In Touch</h4>
-                                <div class="link-container">
-                                    <div>
-                                        <img src="img/envelope-footer-icon.png" alt="Envelope icon">
-                                    </div>
-                                        <a href="#">Email: support@insurezella.com</a>
-                                </div>
-                                <div class="link-container">
-                                    <div>
-                                        <img src="img/phone-footer-icon.png" alt="Phone icon">
-                                    </div>
-                                        <a href="#">Tel: +180772270774</a>
-                                </div>
-                                <div class="link-container">
-                                    <div>
-                                        <img src="img/clock-footer-icon.png" alt="Clock icon">
-                                    </div>
-                                        <a href="#">Hours: Mon-Fri 9:00AM - 5:00PM</a>
-                                    
-                                </div>
-                                <div class="link-container">
-                                    <div>
-                                        <img src="img/address-book-footer-icon.png" alt="Adressbook icon">
-                                    </div>
-                                        <a href="#">300 SE 2nd Street Suite 600 Ft. Lauderdale FL 33301</a>
-                                </div>
-                            </div>
+                        <div class="help-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
+                </section>
         </div>
-        </footer>
-        <script src="js/main.js"></script>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-left-container">
+                <div id="general-info">
+                    <div id="info-logo-container">
+                        <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                    </div>
+                    <p>"Discover the Peace of Mind You Deserve with Insurezella
+                        "Your Reliable Insurance Umbrella"</p>
+                    <div id="info-socials">
+                        <a href="https://www.facebook.com/profile.php?id=100088031780976" target="_blank"><i
+                                class="fab fa-facebook social-icon"></i></a>
+                        <a href="https://x.com/insurezella" target="_blank"><i
+                                class="fab fa-twitter social-icon"></i></a>
+                        <a href="https://www.instagram.com/insurezella/" target="_blank"><i
+                                class="fab fa-instagram social-icon"></i></a>
+                        <a href="https://www.linkedin.com/company/insurezella/" target="_blank"><i
+                                class="fab fa-linkedin-in social-icon"></i></a>
+                    </div>
+                </div>
+                <div id="services">
+                    <h4>Services</h4>
+                    <div id="services-links">
+                        <div>
+                            <img src="img/umbrella-footer-icon.png" alt="Umbrella icon">
+                            <a href="#">Health Insurance</a>
+                        </div>
+                        <div>
+                            <img src="img/life-insurance-footer-icon.png" alt="Life iInsurance icon">
+                            <a href="#">Life Insurance</a>
+                        </div>
+                        <div>
+                            <img src="img/supplements-footer-icon.png" alt="Medicare Supplement icon">
+                            <a href="#">Medicare Supplement</a>
+                        </div>
+                        <div>
+                            <img src="img/id-footer-icon.png" alt="Medicare Advantage icon">
+                            <a href="#">Medicare Advantage</a>
+                        </div>
+                        <div>
+                            <img src="img/obamacare-footer-icon.png" alt="Obamacare icon">
+                            <a href="#">(ACA)Obamacare</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-right-container">
+                <div id="company">
+                    <h4>Company</h4>
+                    <div class="company-links">
+                        <div>
+                            <a href="#">About Us</a>
+                        </div>
+                        <div>
+                            <a href="#">Careers</a>
+                        </div>
+                        <div>
+                            <a href="#">Industry News</a>
+                        </div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        <div>
+                            <a href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="get-in-touch">
+                    <h4>Get In Touch</h4>
+                    <div class="link-container">
+                        <div>
+                            <img src="img/envelope-footer-icon.png" alt="Envelope icon">
+                        </div>
+                        <a href="mailto:support@insurezella.com">Email: support@insurezella.com</a>
+                    </div>
+                    <div class="link-container">
+                        <div>
+                            <img src="img/phone-footer-icon.png" alt="Phone icon">
+                        </div>
+                        <a href="tel:+180772270774">Tel: +180772270774</a>
+                    </div>
+                    <div class="link-container">
+                        <div>
+                            <img src="img/clock-footer-icon.png" alt="Clock icon">
+                        </div>
+                        <a href="#">Hours: Mon-Fri 9:00AM - 5:00PM</a>
+
+                    </div>
+                    <div class="link-container">
+                        <div>
+                            <img src="img/address-book-footer-icon.png" alt="Adressbook icon">
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=300+SE+2nd+Street+Suite+600+Ft.+Lauderdale+FL+33301" target="_blank">300 SE 2nd Street Suite 600 Ft. Lauderdale FL 33301</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
