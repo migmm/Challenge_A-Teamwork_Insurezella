@@ -5,16 +5,27 @@
 /************* Mobile view ************/
 
 /*************** Slider ***************/
+/*************** Slider ***************/
+#plans-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .slider {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: nowrap;
+    width: 700px;
     height: 454px;
     align-items: center;
     justify-content: center;
     gap: 52px;
     padding-top: 65px;
     overflow: hidden;
+    position: relative;
 }
 
 .card {
@@ -30,6 +41,8 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 56px;
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out; /* Agregamos transición para un desplazamiento suave */
 }
 
 .card .image-container {
@@ -57,7 +70,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 8px;
-    margin-top: px;
+    margin-top: 20px;
 }
 
 .dots span {
@@ -65,18 +78,18 @@
     height: 17px;
     border-radius: 50%;
     background-color: var(--oceanblue);
+    cursor: pointer;
 }
 
-.card:nth-child(3),
-.card:nth-child(4),
-.card:nth-child(5) {
-    display: none;
+.dots span.active {
+    background-color: var(--darkblue);
 }
 
 /*************** Web view *************/
 @media screen and (min-width: 1081px) {
     #plans-container {
         margin-top: 27px;
+        width: unset;
     }
 
     .slider {
