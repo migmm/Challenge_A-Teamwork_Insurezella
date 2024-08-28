@@ -4,11 +4,12 @@
   <img src="img/logo.png" alt="Logo">
 </p>
 
-[English version](https://github.com/migmm/Challenge_A-Teamwork_Insurezella/README.md)
+Esta versión del README está en español, también hay una versión en inglés [(English version)](https://github.com/migmm/Challenge_A-Teamwork_Insurezella/blob/main/README.md)
 
 ## Deploy
 
 Principal: [Insurezella](https://insurezella-challenge.glitch.me/)
+
 Backup: [Insurezella](https://migmm.github.io/Challenge_A-Teamwork_Insurezella/)
 
 ## Objetivo
