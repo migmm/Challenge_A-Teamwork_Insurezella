@@ -124,7 +124,7 @@
     .card:nth-child(3),
     .card:nth-child(4),
     .card:nth-child(5) {
-        display: block;
+        display: flex;
     }
 }
 
