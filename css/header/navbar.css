@@ -68,8 +68,9 @@
 }
 
 #navbar-menu ul li .dropdown-content {
-    display: block;
+    display: flex;
     flex-direction: column;
+    width: 500px;
 }
 
 #menuToggle:checked ~ #navbar-menu {
@@ -243,6 +244,10 @@
 
     .dropdown-content a:hover {
         background-color: var(--white);
+    }
+
+    #navbar-menu ul li .dropdown-content {
+        width: unset;
     }
 
     #navbar-menu ul li:hover .dropdown-content {
