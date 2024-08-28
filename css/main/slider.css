@@ -42,7 +42,7 @@
     padding-right: 40px;
     padding-top: 56px;
     flex-shrink: 0;
-    transition: transform 0.5s ease-in-out; /* Agregamos transición para un desplazamiento suave */
+    transition: transform 0.5s ease-in-out;
 }
 
 .card .image-container {
@@ -140,13 +140,8 @@
         display: flex;
     }
 }
-
+/***** Breakpoint to adjust cards *****/
 /********** Extra Breakpoints *********/
-@media screen and (max-width: 715px) {
-    .card:nth-child(2) {
-        display: none;
-    }
-}
 
 @media screen and (max-width: 1420px) and (min-width: 1081px) {
     #plans-container {
