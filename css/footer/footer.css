@@ -3,6 +3,7 @@
 /**************************************/
 
 /************* Mobile view ************/
+
 #footer-container {
     width: 100%;
     position: relative;
@@ -30,5 +31,15 @@
         background-color: var(--skyblue);
         margin-top: 233px;
         margin-bottom: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 825px) {
+    #footer-container {
+        margin-top: 1650px;
+        margin-bottom: 0;
+        height: 50px;
     }
 }
