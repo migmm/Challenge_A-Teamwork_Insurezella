@@ -198,3 +198,21 @@
         padding-left: 5px;
     }
 } 
+
+
+@media screen and (max-width: 825px) {
+    #footer-left-container {
+        flex-direction: column;
+        top: -1610px;
+    }
+
+    #services {
+        margin-top: 50px;
+    }
+
+    #footer-left-container {
+        box-shadow: unset;
+        -webkit-box-shadow: unset;
+        -moz-box-shadow: unset;
+    }
+}
