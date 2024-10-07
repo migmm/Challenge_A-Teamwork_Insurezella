@@ -72,6 +72,18 @@
         height: 560px;
     }
 
+    #hero-background {
+        width: 100vw;
+        position: absolute;
+        height: 555px;
+        z-index: -100;
+        margin-top: 5px;
+        background-image: url('../../img/gray-bg.png');
+        background-repeat: repeat-x;
+        background-position: left top;
+        background-size: 100% 100%;
+    }
+
     #hero-divisor {
         flex: 0 0 200px;
         background: rgba(0, 0, 0, 0.5);
