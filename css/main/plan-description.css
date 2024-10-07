@@ -162,3 +162,9 @@
         gap: 20px;
     }
 }
+
+@media screen and (max-width: 565px) {
+    .simple-plan-container .plan-advantages {
+        flex-direction: column;
+    }
+}
