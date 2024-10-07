@@ -345,3 +345,14 @@
     }
 }
 
+@media screen and (max-width: 760px) {
+    #headline p:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #headline p:nth-child(3) {
+        display: none;
+    }
+}
