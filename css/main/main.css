@@ -4,6 +4,9 @@
 /**************************************/
 
 /************* Mobile view ************/
+main {
+    overflow: hidden;
+}
 
 /********** No mobile styles **********/
 
@@ -17,6 +20,7 @@
     }
 
     #main-container section {
+        position: relative;
         width: 100%;
         padding: 0;
         margin: 0;
